@@ -8,7 +8,7 @@ from discord.ext import commands
 class Bot(commands.Bot):
     def __init__(self):
         intents = discord.Intents.all()
-        super().__init__(command_prefix="$", intents=intents, owner_id=413071345069588500)
+        super().__init__(command_prefix="$", intents=intents, owner_id=)
 
     async def setup_hook(self):
         await self.tree.sync()
@@ -32,6 +32,6 @@ async def main():
     async with bot:
         await load_extensions()
         # noinspection SpellCheckingInspection
-        await bot.start('ODI0NjQ0MDU5OTIyMDM4Nzg0.YFyXoQ.43BLiO3UhkhoPYD7CF70gZTLiMU')
+        await bot.start('')
 
 asyncio.run(main())
