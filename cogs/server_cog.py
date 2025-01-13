@@ -33,8 +33,8 @@ class Start(commands.Cog):
             else:
                 embed = discord.Embed(title="Starting server")
                 await ctx.send(embed=embed)
-                server = subprocess.Popen(r"C:\Users\kekig\Desktop\minecraftcrossserver\paper-1.20.5-22.jar", shell=True)
-                playit = subprocess.Popen(r"C:\Program Files\playit_gg\bin\playit.exe", shell=True)
+                server = subprocess.Popen(r"minecraft.jar", shell=True)
+                playit = subprocess.Popen(r"minecraft.exe", shell=True)
                 time.sleep(20)
                 embed = discord.Embed(title="Started server")
                 return await ctx.reply(embed=embed, mention_author=False)
